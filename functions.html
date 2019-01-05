@@ -1,0 +1,482 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+
+ 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <div class ="jumbotron text-center" >
+	 <h1>Functions</h1>
+	 	<div class="container" >
+	<button type="submit" onclick="rev();return false" class="btn btn-secondary">Reverse</button>
+	<button type="submit" onclick="area();return false" class="btn btn-secondary">Area by value</button>
+		<button type="submit" onclick="area();return false" class="btn btn-secondary">Area by variable</button>
+	<button type="submit" onclick="getVowels();return false" class="btn btn-secondary">Vovel Count</button>
+
+	<button type="submit" onclick="occurance();return false" class="btn btn-secondary"> occurance</button>
+	<button type="submit" onclick="simple();return false" class="btn btn-secondary">Simple</button>
+	 
+   <button type="submit" onclick="myFunction();return false" class="btn btn-secondary"> DATE & TIME</button>
+</div>
+</br>
+	  <div class="container">
+	
+     
+
+	<button type="submit" onclick="greeting();return false" class="btn btn-secondary">Greeting</button>
+	
+	<button type="submit" onclick="add();return false" class="btn btn-secondary">add</button>
+	
+	<button type="submit" onclick="calc();return false" class="btn btn-secondary">Calculator</button>
+	
+	<button type="submit" onclick="square();return false" class="btn btn-secondary">Square</button>
+	
+	
+	<button type="submit" onclick="fact();return false" class="btn btn-secondary">Factorial</button>
+	<button type="submit" onclick="counting();return false" class="btn btn-secondary">counting</button>
+	<button type="submit" onclick="len();return false" class="btn btn-secondary">Length</button>
+	<button type="submit" onclick="pow();return false" class="btn btn-secondary">Power</button>
+	<button type="submit" onclick="max();return false" class="btn btn-secondary">Max</button>
+	</div>
+	</br>
+
+	<div class="container">
+	
+	<button type="submit" onclick="palindrome();return false" class="btn btn-secondary">Palindrome</button>
+	
+	<button type="submit" onclick="upper();return false" class="btn btn-secondary">Upper</button>
+	<button type="submit" onclick="sort();return false" class="btn btn-secondary">Sort</button>
+	<button type="submit" onclick="dice();return false" class="btn btn-secondary">Dice</button>
+		<button type="submit" onclick="longestWord();return false" class="btn btn-secondary"> Longest string</button>	
+			<button type="submit" onclick="unique();return false" class="btn btn-secondary"> Unique</button>	
+			<button type="submit" onclick="myFunction1();return false" class="btn btn-secondary"> Sum of array</button>
+	</div>
+	</br>
+
+	<div class="container">	
+	
+			</div>
+		</div>
+		</div>
+  </form>
+  
+</div>
+ <div class ="jumbotron text-center" >
+	  <div class="container">
+	  <h1>Output</h1>
+<h3 id = "1"></h3>
+
+	  <p id = "demo" align ="center"></p>
+
+	 
+</div>
+
+</body>
+
+</html>
+<script>
+
+function myFunction() {
+
+  
+document.getElementById("demo").innerHTML ="Date&Time : "+Date();
+document.getElementById("1").innerHTML ="Date&Time";
+ } 
+ 
+ function greeting() {
+ 
+  var fname = prompt("Please enter your first name", "");
+var lname = prompt("Please enter your last name", "");
+document.getElementById("demo").innerHTML ="Happy new Year  "+fname+"     "+lname;
+document.getElementById("1").innerHTML ="Greeting Function";
+ }
+ 
+ 
+function add() {
+ 
+  var strx = prompt("Please enter your first digit", "");
+var stry = prompt("Please enter your second digit", "");
+var x = parseInt(strx);
+var y = parseInt(stry);
+var result = x + y;
+
+document.getElementById("demo").innerHTML ="The ADDITION OF TWO NUMBERS:"+x+"+"+y+"="+result;
+document.getElementById("1").innerHTML =" ADDITION function";
+ }
+
+
+function calc() {
+ 
+ 
+
+alert("PRESS 1 FOR ADDITION"+"PRESS 2 FOR SUBTRACTION"+"PRESS 3 FOR MULTIPLICATION"+"PRESS 4 FOR DIVISION");
+
+document.getElementById("1").innerHTML ="Calculator";
+ var a = prompt("Please enter your operator", "");
+ if(a == 1)
+ {
+  var strx = prompt("Please enter your first digit", "");
+var stry = prompt("Please enter your second digit", "");
+var x = parseInt(strx);
+var y = parseInt(stry);
+var result = x + y;
+ document.getElementById("demo").innerHTML =result;
+ }
+else if(a == 2 )
+{
+ var strx = prompt("Please enter your first digit", "");
+var stry = prompt("Please enter your second digit", "");
+var x = parseInt(strx);
+var y = parseInt(stry);
+var result = x - y;
+ document.getElementById("demo").innerHTML =result;
+} 
+
+else if(a == 3 )
+{
+
+  var strx = prompt("Please enter your first digit", "");
+var stry = prompt("Please enter your second digit", "");
+var x = parseInt(strx);
+var y = parseInt(stry);
+var result = x * y;
+ document.getElementById("demo").innerHTML =result;
+}
+else if(a == 4 )
+{
+ var strx = prompt("Please enter your first digit", "");
+var stry = prompt("Please enter your second digit", "");
+var x = parseInt(strx);
+var y = parseInt(stry);
+var result = x / y;
+ document.getElementById("demo").innerHTML =result;
+}
+else
+{
+  document.getElementById("demo").innerHTML ="Wrong Choice";
+}
+
+ } 
+ 
+function square() {
+ 
+  var strx = prompt("Please enter your first digit", "");
+
+var x = parseInt(strx);
+
+var result = x * x;
+
+ document.getElementById("demo").innerHTML ="The Square of the digit is:"+result;
+ document.getElementById("1").innerHTML =" Square Function";
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+function counting() {
+ var text = "";
+  var strx = prompt("Please enter your first digit", "");
+ var stry = prompt("Please enter your second digit", "");
+var x = parseInt(strx);
+var y = parseInt(stry);
+
+for(var i =x;i<=y;i++ )
+
+
+{
+  text += "The number is " + i + "<br>";
+}
+ document.getElementById("demo").innerHTML =text+ "<br>";
+ document.getElementById("1").innerHTML ="Counting Function";
+ }
+ 
+ 
+  
+function len() {
+
+  var strx = prompt("Please enter your first digit", "");
+var x = strx.length;
+ document.getElementById("demo").innerHTML ="The Lenghtn of the string is:"+x+ "<br>";
+ }
+ 
+ 
+ function pow() {
+
+  var strx = prompt("Please enter any number ", "");
+var x = parseInt(strx);
+ var stry = prompt("Please enter power of number", "");
+var y = parseInt(stry);
+var result = Math.pow(x,y); 
+ document.getElementById("demo").innerHTML ="The power of the number is :"+result+ "<br>";
+ document.getElementById("1").innerHTML ="Power Function";
+ }
+ 
+ 
+  
+function fact() {
+ var text = "";
+  var strx = prompt("Please enter your first digit", "");
+ 
+var num = parseInt(strx);
+
+
+
+  if (num === 0 || num === 1){
+    return 1;
+  for (var i = num - 1; i >= 1; i--) {
+    num *= i;
+	text += "The number is " + i ;
+  }
+  return text;
+  
+}
+document.getElementById("demo").innerHTML ="The factorial of the number is:"+num+ "<br>";
+ document.getElementById("1").innerHTML ="Factorial Function";
+ }
+ 
+ 
+ 
+ 
+ function max() {
+ var array = [3 , 6, 2, 56, 32, 5, 89, 32];
+var largest= 0;
+
+for (i=0; i<=largest;i++){
+    if (array[i]>largest) {
+        var largest=array[i];
+    }
+}
+
+		 
+    
+
+
+
+document.getElementById("demo").innerHTML ="Number list:"+array+"<br>"+"The largest number of the digit is:"+largest;
+  
+ document.getElementById("1").innerHTML ="MAx Number Function "; 
+
+
+
+ }
+ 
+ 
+ 
+ function palindrome() {
+    var str = prompt("Enter any word:","");
+	
+    var len = str.length;
+    var mid = Math.floor(len/2);
+
+    for ( var i = 0; i < mid; i++ ) {
+        if (str[i] !== str[len - 1 - i]) {
+		
+           document.getElementById("demo").innerHTML ="This is not a palindrome word";
+        }
+		else {
+		
+		
+      document.getElementById("demo").innerHTML ="This is palindrome word";
+		}
+		document.getElementById("1").innerHTML ="Checking Palindrome Function";
+    }
+
+}
+ 
+ 
+ 
+ 
+
+function upper() 
+{
+var str = prompt("enter","");
+var splitStr = str.toLowerCase().split(' ');
+   for (var i = 0; i < splitStr.length; i++) {
+      
+       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+   }
+   c = splitStr.join(' ');
+   document.getElementById("demo").innerHTML="The Given phrase is :"+str+"</br>"+"after capitalize:"+c;
+   document.getElementById("1").innerHTML="Uper Case Word of a String Function";
+}
+
+
+function sort() {
+ var array = [3 , 6, 2, 4,1 , 5,7 ,9 ];
+var a = array.sort();
+
+
+
+
+		 
+    
+
+
+
+document.getElementById("demo").innerHTML ="sorted list:"+a;
+ document.getElementById("1").innerHTML="Sorting  Function"; 
+  
+
+
+
+ }
+ 
+ 
+ 
+ 
+function dice() {
+
+var rand = Math.round(Math.random() * 6);  
+
+
+
+document.getElementById("demo").innerHTML ="Dice "+rand;
+ document.getElementById("1").innerHTML="Dice Function"; 
+  
+
+
+
+ }
+ 
+ 
+ function rev() {
+
+var a = prompt("Enter a value");
+var arr = [];
+
+for (var i = 0; i < a.length; i++) {
+    arr[i] = a.charAt(i);
+}
+arr.reverse();
+alert(arr);
+  
+document.getElementById("1").innerHTML="Reverse Function";
+
+
+ }
+ 
+ 
+ 
+ function area(a=2,b=3) {
+var c = a*b;
+document.getElementById("demo").innerHTML =+c;  
+document.getElementById("1").innerHTML="Area by Value";
+ }
+ 
+  function area1(a,b) {
+a = 2 ;
+b = 3;
+var c = a*b;
+document.getElementById("demo").innerHTML =c;  
+document.getElementById("1").innerHTML="Area by Variable";
+ }
+ 
+ function simple() {
+
+document.getElementById("demo").innerHTML ="Hellow world";  
+document.getElementById("1").innerHTML="Simple function";
+ }
+ 
+function getVowels() {
+var str = prompt("enter phrase","");
+  var vowelsCount = 0;
+
+
+  var string = str.toString();
+
+  
+  for (var i = 0; i <= string.length - 1; i++) {
+
+
+    if (string.charAt(i) == "a" || string.charAt(i) == "e" || string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u") {
+      vowelsCount += 1;
+    }
+  }
+  
+document.getElementById("demo").innerHTML ="number of vowel present in your phrase : "+vowelsCount; 
+document.getElementById("1").innerHTML="Vowels Count Function";  
+}
+
+function occurance() {
+var temp = prompt("enter phrase","");
+
+var count = (temp.match(/is/) || []).length;
+document.getElementById("demo").innerHTML =count;  
+document.getElementById("1").innerHTML="Occurance Function";
+ }
+ 
+ 
+ function longestWord() {
+ 
+var string = prompt("enter phrase","");
+    var str = string.split(" ");
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i < str.length ; i++) {
+        if (longest < str[i].length) {
+            longest = str[i].length;
+            word = str[i];
+        }
+    }
+  document.getElementById("demo").innerHTML =word; 
+document.getElementById("1").innerHTML="Longest String Function";  
+}
+
+ 
+function unique(){
+var str="aabbbkaabda";
+Array.prototype.map.call(str, 
+ (obj,i)=>{
+   if(str.indexOf(obj,i+1)==-1 && str.lastIndexOf(obj,i-1)==-1){ // another and condition
+     
+document.getElementById("demo").innerHTML = obj;
+document.getElementById("1").innerHTML="Detect unique character Function";
+   }
+ }
+).join("");
+}  
+
+
+
+ var numbers = [65, 44, 12, 77];
+
+function getSum(total, num) {
+  return total + num;
+}
+function myFunction1(item) {
+  document.getElementById("demo").innerHTML ="The sum of array is:"+ numbers.reduce(getSum);
+  document.getElementById("1").innerHTML="Sum of all Values of an array Function ";
+}
+
+  </script>
